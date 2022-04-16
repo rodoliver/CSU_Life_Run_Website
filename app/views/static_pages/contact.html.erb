@@ -4,25 +4,25 @@
 <form>
    <div class="row mb-3">
     <for="validationServer01" class="col-sm-2 col-form-label">Subject:</label>
-    <div class="col-sm-10">
+    <div class="col-sm-5">
       <input type="text" class="form-control" id="validationServer01">
     </div>
   </div>
   <div class="row mb-3">
     <label for="validationServer02" class="col-sm-2 col-form-label">Name</label>
-    <div class="col-sm-10">
+    <div class="col-sm-5">
       <input type="text" class="form-control" id="validationServer02">
     </div>
   </div>
   <div class="row mb-3">
     <label for="validationServer03" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
+    <div class="col-sm-5">
       <input type="email" class="form-control" id="validationServer03">
     </div>
   </div>
   <div class="row mb-3">
     <label for="validationServer04" class="col-sm-2 col-form-label">Phone</label>
-    <div class="col-sm-10">
+    <div class="col-sm-5">
       <input type="text" class="form-control" id="validationServer04">
     </div>
   </div>
@@ -30,13 +30,14 @@
       <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
     </div>
+   <div class="col-12">
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-      <label class="form-check-label" for="flexCheckChecked">
-        Checked checkbox
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Send my a copy
       </label>
     </div>
-    <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div>
-  </form>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>

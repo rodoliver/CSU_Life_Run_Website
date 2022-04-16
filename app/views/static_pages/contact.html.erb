@@ -5,7 +5,7 @@
 
 <form>
    <div class="row mb-3">
-    <label for="validationServer01" class="col-sm-2 col-form-label">Subject:</label>
+    <label for="validationServer01" class="col-sm-3 col-form-label">Subject:</label>
     <div class="col-sm-5">
       <input type="text" class="form-control" id="validationServer01">
     </div>
@@ -32,13 +32,15 @@
       <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
     <div class="col-6">
-      <div class="form-check">
-         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-         <label class="form-check-label" for="invalidCheck2">
-        Send my a copy
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
       </label>
+      <div class="invalid-feedback">
+        Please send me a copy.
+      </div>
     </div>
-  </div>
   </div>
   <div class="col-6">
     <button class="btn btn-primary" type="submit">Submit form</button>

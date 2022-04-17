@@ -24,6 +24,7 @@ test "invalid signup information" do
     end
     follow_redirect!
     assert_template 'users/show'
-    assert_not flash.FILL_IN
+    assert_not flash.empty?
+    assert is_logged_in?
   end
 end

@@ -7,26 +7,29 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
+  
   def create
-    @user = User.new(params[:user])    # Not the final implementation!
+    @user = User.new(user_params)    # Not the final implementation!
     if @user.save
       # Handle a successful save.
+      reset_session
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
       render 'new'
     end
   end
-
-  def create
-    @user = User.new(user_params)
-    if @user.save
+  
+  #def create
+  #  @user = User.new(user_params)
+  #  if @user.save
       # Handle a successful save.
-      redirect_to user_url(@user)
-    else
-      render 'new'
-    end
-  end
+  #    redirect_to user_url(@user)
+  #  else
+  #    render 'new'
+  #  end
+  #end
 
   private
 

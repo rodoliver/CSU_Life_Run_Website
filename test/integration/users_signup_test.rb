@@ -10,10 +10,11 @@ test "invalid signup information" do
                                          password_confirmation: "bar" } }
     end
     assert_template 'users/new'
-    assert_select 'div#<error_explanation>'
-    assert_select 'div.<field_with_errors>'
+    assert_select 'div#error_explanation'
+    assert_select 'div.alert.alert-danger'
     
   end
+  
   test "valid signup information" do
     get signup_path
     assert_difference 'User.count', 1 do
@@ -24,6 +25,8 @@ test "invalid signup information" do
     end
     follow_redirect!
     assert_template 'users/show'
-    assert_not flash.FILL_IN
+    assert_not flash.empty?
+    assert is_logged_in? #figure out the error later
+    
   end
 end

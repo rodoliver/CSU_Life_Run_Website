@@ -27,10 +27,15 @@ test "invalid signup information" do
     assert_template 'users/show'
     assert_not flash.empty?
 <<<<<<< HEAD
+<<<<<<< HEAD
     assert is_logged_in?
 =======
     assert is_logged_in? #figure out the error later
     
 >>>>>>> b6465810ee03f8559efbc909ebaef429253bf0b2
+=======
+    assert is_logged_in? #figure out the error later
+    
+>>>>>>> 3a9ad49db4325fc4605778a404f4f56ed23440a0
   end
 end

@@ -16,14 +16,11 @@ body {
   color: white;
 }
 
-img {
-object-fit: cover;
-height: 500px;
-}
-
 .body-img {
   background-image: url("marathon-runners.jpg");
   padding-top: 5%;
+  object-fit: cover;
+  height: 300px;
 }
 
 section {

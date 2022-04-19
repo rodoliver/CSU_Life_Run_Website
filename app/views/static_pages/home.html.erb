@@ -1,11 +1,15 @@
 
 <div class="body-img">
    <h2>
+       </br>
+       </br>
     This is the home page for the
     <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
   </h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary justify-content-md-end" %>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
 </div>
 <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
                       "https://rubyonrails.org/" %>

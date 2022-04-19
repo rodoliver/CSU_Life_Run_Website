@@ -17,14 +17,13 @@ body {
 }
 
 img {
-object-fit: cover;  
+object-fit: cover;
+height: auto;
 }
 
 .body-img {
   background-image: url("marathon-runners.jpg");
-  padd-top: 5%;
-   max-width: 100%;
-  height: 100%;
+  padding-top: 5%;
 }
 
 section {

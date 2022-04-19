@@ -19,14 +19,14 @@ body {
 .body-img {
   background-image: url("marathon-runners2.jpg");
   padding-top: 5%;
-  clear: left;
+  clear: right;
   object-fit: cover;
-  width: 400px;
+  width: 100%;
   height: 400px;
 }
 
 .home-logo{
-  clear: right;
+  clear: left;
 }
 
 section {

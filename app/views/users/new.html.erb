@@ -1,6 +1,5 @@
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
-<!-- this should not workd at themoment-->
 <div class="row">
   <div class="col-md-6 col-md-offset-8">
     <%= form_with(model: @user, local: true) do |f| %>
@@ -8,26 +7,26 @@
       <%= f.label :name %>  <%#modifty this%>
       <%= f.text_field :name, class: 'form-control' %>
       
-      <%# f.label :lname %>
-      <%# f.text_field :lname, class: 'form-control %>
+      <!--<label for="user_bDay">Name</label>
+      <input id="user_bDay" name="user[bDay]" type="text" /> -->
       
-      <% f.label :Bdate %>
-      <% f.text_field :Bdate, class: 'form-control' %>
+      <%= f.label :bDay %>
+      <%= f.text_field :bDay, class: 'form-control' %>
       
-      <% f.label :address %>
-      <% f.text_field :address, class: 'form-control' %>
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control' %>
       
-      <% f.label :city %>
-      <% f.text_field :city, class: 'form-control' %>
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control' %>
       
-      <% f.label :state %>
-      <% f.text_field :state, class: 'form-control' %>
+      <%= f.label :state %>
+      <%= f.text_field :state, class: 'form-control' %>
       
-      <% f.label :zip %>
-      <% f.text_field :zip, class: 'form-control' %>
+      <%= f.label :zip %>
+      <%= f.text_field :zip, class: 'form-control' %>
       
-      <% f.label :pNumber %>
-      <% f.text_field :pNumber, class: 'form-control' %>
+      <%= f.label :pNumber %>
+      <%= f.text_field :pNumber, class: 'form-control' %>
       
       <%# f.label :tName %>
       <%# f.text_field :tName, class: 'form-control %>
@@ -37,15 +36,15 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
       
-      <%# f.label :username %>
-      <%# f.text_field :username, class: 'form-control %>
-
+      <%= f.label :username %>
+      <%= f.text_field :username, class: 'form-control' %>
+      
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
-
+      
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
-
+      
       <%= f.submit "Create my account", class: "btn btn-primary" %>
     <% end %>
   </div>

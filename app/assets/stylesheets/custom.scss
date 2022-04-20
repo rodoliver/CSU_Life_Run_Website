@@ -244,11 +244,12 @@ input {
 }
 
 .right {
-  clear: right;
+  float: right;
+  padding-left: 2em;
 }
 
 .left {
-  clear: left;
+  float: left;
 }
 
 

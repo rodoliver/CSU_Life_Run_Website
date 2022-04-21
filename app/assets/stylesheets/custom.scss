@@ -249,14 +249,6 @@ input {
   padding-right: 15px;
 }
 
-.right {
-  float: right;
-  font-style: italic;
-  padding-left: 28px;
-  height: auto;
-  color: black;
-  weight: bold;
-}
 
 .left {
   float: left;
@@ -269,6 +261,7 @@ aside {
   margin-left: 15px;
   float: right;
   font-style: italic;
+  font-weight: bold;
 
 }
 

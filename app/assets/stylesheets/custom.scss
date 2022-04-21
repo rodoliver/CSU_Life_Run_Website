@@ -24,16 +24,19 @@ body {
   height: 450px;
 }
 
+.aside-img {
+  padding-right: 8px;
+}
+
 .img-content{
-
   margin-top: 8em;
-
 }
 
 .img-btn {
   padding-left: 38px;
   position: absolute;
 }
+
 section {
   overflow: auto;
 }
@@ -262,6 +265,5 @@ aside {
   float: right;
   font-style: italic;
   font-weight: bold;
-
 }
 

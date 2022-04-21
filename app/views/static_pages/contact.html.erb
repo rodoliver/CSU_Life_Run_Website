@@ -2,9 +2,23 @@
 <h1>Contact</h1>
 
 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @rkmteamproject@gmail.com</button>
 
-<form>
-   <div class="row mb-3">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+             <div class="row mb-3">
     <label for="validationServer01" class="col-sm-1 col-form-label">Subject:</label>
     <div class="col-sm-8">
       <input type="text" class="form-control" id="validationServer01">
@@ -28,21 +42,33 @@
       <input type="text" class="form-control" id="validationServer04">
     </div>
   </div>
-   <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-      <div class="col-3">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+  <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
     </div>
-   </div>      
-    <div class="col-3">
-     <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-      <label class="form-check-label" for="flexCheckChecked">
-   Please send me a copy
-  </label>
+  </div>
 </div>
-    </div>
-      <div class="col-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+
+var exampleModal = document.getElementById('exampleModal')
+exampleModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget
+  // Extract info from data-bs-* attributes
+  var recipient = button.getAttribute('data-bs-whatever')
+  // If necessary, you could initiate an AJAX request here
+  // and then do the updating in a callback.
+  //
+  // Update the modal's content.
+  var modalTitle = exampleModal.querySelector('.modal-title')
+  var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+  modalTitle.textContent = 'New message to ' + recipient
+  modalBodyInput.value = recipient
+})

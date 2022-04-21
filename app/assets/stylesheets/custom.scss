@@ -265,8 +265,11 @@ aside {
   margin-left: 10px;
   float: right;
   font-style: italic;
-  font-weight: bold;
+
   font-color: black;
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */

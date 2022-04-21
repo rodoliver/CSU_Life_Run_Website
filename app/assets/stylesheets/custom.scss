@@ -32,6 +32,7 @@ body {
 
 .img-btn {
   margin-left: 28em;
+  position: absolute;
 }
 section {
   overflow: auto;
@@ -241,12 +242,11 @@ input {
 
 
 .container {
-            width: 80%;
-            height: auto;
-            
-            padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
+  width: 80%;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .right {
@@ -254,7 +254,8 @@ input {
   font-style: italic;
   padding-left: 25em;
   height: auto;
-  color: #00308F;
+  color: black;
+  weight: bold;
 }
 
 .left {

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_04_19_034802) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "password_digest"
-    t.date "bDay"
+    t.string "bDay"
     t.boolean "admin", default: false
     t.string "address"
     t.string "city"

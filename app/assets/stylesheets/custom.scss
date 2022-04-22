@@ -264,10 +264,16 @@ aside {
   padding-left: 10px;
   margin-left: 10px;
   float: right;
+}
 
-  font-family: Lucida Handwriting, Helvetica, sans-serif;
-  color: #fff;
-  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */

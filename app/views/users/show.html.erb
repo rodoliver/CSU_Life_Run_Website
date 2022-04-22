@@ -1,10 +1,16 @@
-<% provide(:title, @user.name) %>
+<% provide(:title, 'Runner info') %>
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%# gravatar_for @user %>
+        <p style="text-align:left;">Full Name:  <%= @user.name %></p><br>
+        <p style="text-align:left;">Phone Number:  <%= @user.pNumber %></p> <br>
+        <p style="text-align:left;">Email:  <%= @user.email %></p> <br>
+        <p style="text-align:left;">Street Address:  <%= @user.address %></p> <br>
+        <p style="text-align:left;">City:  <%= @user.city %></p> <br>
+        <p style="text-align:left;">State:  <%= @user.state %></p> <br>
+        <p style="text-align:left;">Zip:  <%= @user.zip %></p> <br>
       </h1>
     </section>
   </aside>

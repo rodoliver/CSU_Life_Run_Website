@@ -1,6 +1,6 @@
 class AddColumnsForProject < ActiveRecord::Migration[6.1]
   def change
-    add_column :users, :bDay, :date, default:2022-12-31
+    add_column :users, :bDay, :string
     add_column :users, :admin, :boolean, default:false
     add_column :users, :address, :string
     add_column :users, :city, :string

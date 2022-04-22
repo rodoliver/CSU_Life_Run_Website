@@ -1,10 +1,92 @@
 <% provide(:title, "FAQs") %>
+
+<!-- searched online for the format here is the link https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+    <style>
+      .collapsible {
+        background-color: #FFFFFF;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+      }
+
+      .active, .collapsible:hover {
+        background-color: #00538C;
+        color: white;
+      }
+
+      .content {
+        color: black;
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+    </style>
+    
     <h1>FAQs</h1>
     <p>
-      Browser our frequently asked questions
-      <a href="https://www.railstutorial.org/help">Rails Tutorial help
-      section</a>.
-      To get help on this sample app, see the
-      <a href="https://www.railstutorial.org/book"><em>Ruby on Rails
-      Tutorial</em> book</a>.
-    </p>
+      What other info should go on an FAQ page?
+    </p><br>
+    
+    <p>
+      Still stumped on what to write?  Here are some ideas of what you might include in you FAQ:
+    </p><br>
+    <button type="button" class="collapsible">Is there a limit on how many people can join a team?</button>
+    <div class="content">
+      <p>There is not a limit to how many people can join a team</p>
+    </div>
+    
+    <button type="button" class="collapsible">Can a person be on more than one team?</button>
+    <div class="content">
+      <p>No they can not, the team is one per runner</p>
+    </div>
+    
+    <button type="button" class="collapsible">What is the age limit to be able to participate in the run?</button>
+    <div class="content">
+      <p>The age limit is at least 18</p>
+    </div>
+    
+    <button type="button" class="collapsible">Are there any restrictions to wearing company logos while participating as a runner?</button>
+    <div class="content">
+      <p>There is no restrictions for wearing comany logos while participating as a runner</p>
+    </div>
+    
+    <button type="button" class="collapsible">Are there dietary options provided for the lunch following the race?</button>
+    <div class="content">
+      <p>Yes there is</p>
+    </div>
+    
+    <button type="button" class="collapsible">Are registration fees refundable?</button>
+    <div class="content">
+      <p>No they are not</p>
+    </div>
+    
+    <button type="button" class="collapsible">Can registration be transferred to another runner?</button>
+    <div class="content">
+      <p>No at the moment it might change in the future</p>
+    </div>
+    
+    <!-- searched online for the format here is the link https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    
+    

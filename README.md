@@ -27,7 +27,8 @@ $ rails server
 The app may not be fully complete but there is some importaint info to tell the user_info
 
 To be able to use the site as an admin you need to login with:
-The username:  username
-The password:  password
+
+--The username:  username
+--The password:  password
 
 Only the admin can see all the users in the database via the admin tab.

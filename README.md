@@ -1,26 +1,13 @@
-# Ruby on Rails Tutorial sample application
-
-## Reference Implementation
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-(6th Edition)
-by [Michael Hartl](https://www.michaelhartl.com/).
-
-## License
-
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+# CSU Life Run Website
 
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
 
 ```
-$ gem install bundler -v 2.2.17
-$ bundle _2.2.17_ config set --local without 'production'
-$ bundle _2.2.17_ install
+$ gem install bundler -v 2.3.6
+$ bundle _2.3.6_ config set --local without 'production'
+$ bundle _2.3.6_ install
 ```
 
 Next, migrate the database:
@@ -29,17 +16,18 @@ Next, migrate the database:
 $ rails db:migrate
 ```
 
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
+Then run the app in a local server:
 
 ```
 $ rails server
 ```
 
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+## Development notes
+
+The app may not be fully complete but there is some importaint info to tell the user_info
+
+To be able to use the site as an admin you need to login with:
+The username:  username
+The password:  password
+
+Only the admin can see all the users in the database via the admin tab.

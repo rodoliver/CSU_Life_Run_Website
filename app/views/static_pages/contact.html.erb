@@ -2,47 +2,40 @@
 <h1>Contact</h1>
 
 
-
-<form>
-   <div class="row mb-3">
-    <label for="validationServer01" class="col-sm-1 col-form-label">Subject:</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="validationServer01">
+<div class="row g-2">
+  <div class="col-md-3">
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+      <label for="floatingInputGrid">Email address</label>
     </div>
   </div>
-  <div class="row mb-3">
-    <label for="validationServer02" class="col-sm-1 col-form-label">Name:</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="validationServer02">
-    </div>
+ <div class="mb-2">
+    <label for="formGroupExampleInput" class="form-label">Title</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Type in the name of your topic">
   </div>
-  <div class="row mb-3">
-    <label for="validationServer03" class="col-sm-1 col-form-label">Email:</label>
-    <div class="col-sm-8">
-      <input type="email" class="form-control" id="validationServer03">
-    </div>
+  <div class="mb-2">
+    <label for="formGroupExampleInput2" class="form-label">Phone Number</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="(###) ### - ####">
   </div>
-  <div class="row mb-3">
-    <label for="validationServer04" class="col-sm-1 col-form-label">Phone:</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="validationServer04">
+  <div class="row">
+    <div class="col-md-2">
+      <input type="text" class="form-control" placeholder="First name" aria-label="name">
     </div>
+  <div class="col-md-2">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
   </div>
-   <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-      <div class="col-3">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
-    </div>
-   </div>      
-    <div class="col-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-             Please send me a copy
-          </label> 
-      </div>
-    </div>
-      <div class="col-3">
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-    </form>
+  </div>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Comments</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+    Please send me a copy
+  </label>
+</div>
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+  </div>
+</div>

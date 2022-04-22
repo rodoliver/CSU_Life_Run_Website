@@ -24,15 +24,20 @@ body {
   height: 450px;
 }
 
+.aside-img {
+  padding-right: 20px;
+  
+}
+
 .img-content{
-
   margin-top: 8em;
-
 }
 
 .img-btn {
-  margin-left: 28em;
+  padding-left: 38px;
+  position: absolute;
 }
+
 section {
   overflow: auto;
 }
@@ -241,27 +246,25 @@ input {
 
 
 .container {
-            width: 80%;
-            height: auto;
-            
-            padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
+  width: 80%;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.right {
-  float: right;
-  font-style: italic;
-  padding-left: 25em;
-  height: auto;
-  color: #00308F;
-}
 
 .left {
   float: left;
   margin-top: 2em;
 }
 
+aside {
+  width: 60%;
+  padding-left: 10px;
+  margin-left: 10px;
+  float: right;
+}
 
 .users {
   list-style: none;
@@ -273,3 +276,16 @@ input {
   }
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
